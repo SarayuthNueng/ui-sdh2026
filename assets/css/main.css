@@ -94,6 +94,40 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.news-slider {
+  background: #f5f9ff; /* โทนอ่อนๆ เข้ากับ hero ด้านบน */
+}
+
+.news-card {
+  background: #ffffff;
+}
+
+.news-badge {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+}
+
+/* ปรับจุด Indicator ให้ดูโมเดิร์นขึ้น */
+#newsCarousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+}
+
+#newsCarousel .carousel-indicators .active {
+  width: 22px;
+  border-radius: 999px;
+}
+
+/* มือถือ: ให้เว้นระยะด้านบนเล็กน้อย */
+@media (max-width: 767.98px) {
+  .news-slider {
+    padding-top: 2.5rem;
+  }
+}
+
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
