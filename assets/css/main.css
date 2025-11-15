@@ -856,6 +856,44 @@ h6 {
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
+.visitor-counter {
+  font-size: 0.95rem;
+  color: #374151;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.visitor-number {
+  font-weight: 700;
+  color: #0b7a4e; /* เขียวโรงพยาบาล */
+}
+
+.visitor-icon {
+  font-size: 1.1rem;
+}
+
+.download-card {
+  border-radius: 14px;
+  transition: 0.25s;
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+}
+
+
+.news-category .nav-link {
+  border-radius: 999px;
+  padding-inline: 18px;
+}
+
+.news-category .nav-link.active {
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
 
 
 

@@ -75,83 +75,11 @@
           <ul>
             <li><a href="#hero" class="active">หน้าหลัก</a></li>
             <li><a href="#about">เกี่ยวกับเรา</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>หน่วยงานภายใน</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Dropdown</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>ข่าวสาร</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Dropdown</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
-            <li><a href="#features">ประกาศITA</a></li>
-            <li><a href="#services">เว็บService</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>ดาวน์โหลด</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
-              <ul>
-                <li><a href="#">Dropdown 1</a></li>
-                <li class="dropdown">
-                  <a href="#"
-                    ><span>Deep Dropdown</span>
-                    <i class="bi bi-chevron-down toggle-dropdown"></i
-                  ></a>
-                  <ul>
-                    <li><a href="#">Deep Dropdown 1</a></li>
-                    <li><a href="#">Deep Dropdown 2</a></li>
-                    <li><a href="#">Deep Dropdown 3</a></li>
-                    <li><a href="#">Deep Dropdown 4</a></li>
-                    <li><a href="#">Deep Dropdown 5</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Dropdown 2</a></li>
-                <li><a href="#">Dropdown 3</a></li>
-                <li><a href="#">Dropdown 4</a></li>
-              </ul>
-            </li>
+            <li><a href="#departments">หน่วยงานภายใน</a></li>
+            <li><a href="#news">ข่าวสาร</a></li>
+            <li><a href="#ita-years">ประกาศITA</a></li>
+            <li><a href="#download">ดาวน์โหลด</a></li>
+            <li><a href="#web-services">เว็บService</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
@@ -213,9 +141,8 @@
         </div>
       </section>
 
-      <!-- News / Announcement Slider -->
       <!-- News Section -->
-      <section id="news" class="news section py-5">
+      <section id="news" class="section py-5">
         <div class="container">
           <!-- แถวบน: หัวข้อ + Hero ข่าว อยู่ row เดียวกัน -->
           <div class="row align-items-stretch g-4 mb-4 news-hero-box">
@@ -383,226 +310,129 @@
             </div>
           </div>
           <!-- /row hero -->
-
-          <!-- แถบหมวดข่าว -->
-          <div class="news-category pb-3 border-bottom mt-3">
+          <!-- TAB หมวดข่าว -->
+          <div class="news-category pb-3 border-bottom mb-4">
             <ul class="nav nav-pills gap-2 flex-wrap justify-content-center">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
+                <button
+                  class="nav-link active news-filter-btn"
+                  data-filter="all"
+                >
+                  ทั้งหมด
+                </button>
+              </li>
+              <li class="nav-item">
+                <button class="nav-link news-filter-btn" data-filter="pr">
                   <i class="bi bi-megaphone-fill me-1"></i> ประชาสัมพันธ์
-                </a>
+                </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <button class="nav-link news-filter-btn" data-filter="job">
                   <i class="bi bi-person-badge-fill me-1"></i> รับสมัครงาน
-                </a>
+                </button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <button class="nav-link news-filter-btn" data-filter="procure">
                   <i class="bi bi-file-earmark-text-fill me-1"></i>
                   จัดซื้อ–จัดจ้าง
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-clipboard-check-fill me-1"></i> ประกาศ EG-P
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-people-fill me-1"></i> ชมรมจริยธรรม
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-cash-stack me-1"></i> งบการเงินประจำปี
-                </a>
+                </button>
               </li>
             </ul>
           </div>
 
-          <!-- รายการข่าวแบบการ์ด (แสดง 6 ข่าวล่าสุดของหมวดที่เลือก) -->
-          <div class="news-list pt-4">
-            <div class="row g-4">
-              <!-- ข่าว 1 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm border-0 news-card">
-                  <img
-                    src="assets/img/about-5.webp"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <span class="badge bg-primary mb-2">ประชาสัมพันธ์</span>
-                    <h5 class="card-title">
-                      แจ้งเปลี่ยนแปลงเวลาบริการคลินิกนอกเวลา
-                    </h5>
-                    <p class="text-muted small mb-2">
-                      ประกาศวันที่ 13 พ.ย. 2568
-                    </p>
-                    <p class="card-text text-muted small">
-                      ปรับปรุงรอบให้บริการคลินิกนอกเวลา
-                      เพื่ออำนวยความสะดวกแก่ผู้รับบริการ…
-                    </p>
-                    <a
-                      href="#"
-                      class="stretched-link small text-primary fw-semibold"
-                      >อ่านเพิ่มเติม</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- ข่าว 2 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm border-0 news-card">
-                  <img
-                    src="assets/img/about-5.webp"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <span class="badge bg-success mb-2">รับสมัครงาน</span>
-                    <h5 class="card-title">
-                      รับสมัครเจ้าพนักงานสาธารณสุข 2 อัตรา
-                    </h5>
-                    <p class="text-muted small mb-2">
-                      ประกาศวันที่ 11 พ.ย. 2568
-                    </p>
-                    <p class="card-text text-muted small">
-                      คุณสมบัติผู้สมัคร หลักฐานที่ต้องยื่น
-                      และกำหนดวันสอบคัดเลือก…
-                    </p>
-                    <a
-                      href="#"
-                      class="stretched-link small text-primary fw-semibold"
-                      >อ่านเพิ่มเติม</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- ข่าว 3 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm border-0 news-card">
-                  <img
-                    src="assets/img/about-5.webp"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <span class="badge bg-warning mb-2">จัดซื้อ–จัดจ้าง</span>
-                    <h5 class="card-title">ประกาศสอบราคาซื้อวัสดุการแพทย์</h5>
-                    <p class="text-muted small mb-2">
-                      ประกาศวันที่ 9 พ.ย. 2568
-                    </p>
-                    <p class="card-text text-muted small">
-                      รายละเอียดรายการวัสดุ เงื่อนไขการยื่นข้อเสนอ
-                      และกำหนดวันยื่นซอง…
-                    </p>
-                    <a
-                      href="#"
-                      class="stretched-link small text-primary fw-semibold"
-                      >อ่านเพิ่มเติม</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- ข่าว 4 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm border-0 news-card">
-                  <img
-                    src="assets/img/about-5.webp"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <span class="badge bg-secondary mb-2">ประกาศ EG-P</span>
-                    <h5 class="card-title">
-                      ประกาศผลผู้ชนะการจัดซื้อจัดจ้าง (EG-P)
-                    </h5>
-                    <p class="text-muted small mb-2">
-                      ประกาศวันที่ 8 พ.ย. 2568
-                    </p>
-                    <p class="card-text text-muted small">
-                      สรุปผลการจัดซื้อจัดจ้างผ่านระบบ e-GP ตามรายการที่ระบุ…
-                    </p>
-                    <a
-                      href="#"
-                      class="stretched-link small text-primary fw-semibold"
-                      >อ่านเพิ่มเติม</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- ข่าว 5 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm border-0 news-card">
-                  <img
-                    src="assets/img/about-5.webp"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <span class="badge bg-info mb-2 text-dark"
-                      >ชมรมจริยธรรม</span
-                    >
-                    <h5 class="card-title">กิจกรรมรณรงค์คุณธรรมในองค์กร</h5>
-                    <p class="text-muted small mb-2">
-                      ประกาศวันที่ 7 พ.ย. 2568
-                    </p>
-                    <p class="card-text text-muted small">
-                      เชิญชวนบุคลากรร่วมกิจกรรมเสริมสร้างวัฒนธรรมสุจริตโปร่งใส…
-                    </p>
-                    <a
-                      href="#"
-                      class="stretched-link small text-primary fw-semibold"
-                      >อ่านเพิ่มเติม</a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <!-- ข่าว 6 -->
-              <div class="col-lg-4 col-md-6">
-                <div class="card h-100 shadow-sm border-0 news-card">
-                  <img
-                    src="assets/img/about-5.webp"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body">
-                    <span class="badge bg-dark mb-2">งบการเงินประจำปี</span>
-                    <h5 class="card-title">
-                      ประกาศเผยแพร่งบการเงินประจำปี 2567
-                    </h5>
-                    <p class="text-muted small mb-2">
-                      ประกาศวันที่ 1 พ.ย. 2568
-                    </p>
-                    <p class="card-text text-muted small">
-                      รายงานงบการเงิน งบดุล
-                      และรายงานผลการดำเนินงานประจำปีของโรงพยาบาล…
-                    </p>
-                    <a
-                      href="#"
-                      class="stretched-link small text-primary fw-semibold"
-                      >อ่านเพิ่มเติม</a
-                    >
-                  </div>
+          <!-- การ์ดข่าว -->
+          <div class="row g-4" id="newsCards">
+            <!-- การ์ดข่าว 1 : ประชาสัมพันธ์ -->
+            <div class="col-lg-4 col-md-6 news-card-wrap" data-category="pr">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="assets/img/about-5.webp"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span class="badge bg-primary mb-2">ประชาสัมพันธ์</span>
+                  <h5 class="card-title">
+                    แจ้งเปลี่ยนแปลงเวลาบริการคลินิกนอกเวลา
+                  </h5>
+                  <p class="text-muted small mb-2">ประกาศวันที่ 13 พ.ย. 2568</p>
+                  <p class="card-text text-muted small">
+                    ปรับปรุงรอบให้บริการคลินิกนอกเวลา
+                    เพื่ออำนวยความสะดวกแก่ผู้รับบริการ…
+                  </p>
+                  <a
+                    href="#"
+                    class="stretched-link small text-primary fw-semibold"
+                    >อ่านเพิ่มเติม</a
+                  >
                 </div>
               </div>
             </div>
 
-            <!-- ปุ่มดูทั้งหมด -->
-            <div class="text-center mt-4">
-              <a href="news-list.html" class="btn btn-outline-primary btn-sm">
-                ดูข่าวทั้งหมด
-              </a>
+            <!-- การ์ดข่าว 2 : รับสมัครงาน -->
+            <div class="col-lg-4 col-md-6 news-card-wrap" data-category="job">
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="assets/img/about-5.webp"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span class="badge bg-success mb-2">รับสมัครงาน</span>
+                  <h5 class="card-title">
+                    รับสมัครเจ้าพนักงานสาธารณสุข 2 อัตรา
+                  </h5>
+                  <p class="text-muted small mb-2">ประกาศวันที่ 11 พ.ย. 2568</p>
+                  <p class="card-text text-muted small">
+                    คุณสมบัติผู้สมัคร หลักฐานที่ต้องยื่น และกำหนดวันสอบคัดเลือก…
+                  </p>
+                  <a
+                    href="#"
+                    class="stretched-link small text-primary fw-semibold"
+                    >อ่านเพิ่มเติม</a
+                  >
+                </div>
+              </div>
             </div>
+
+            <!-- การ์ดข่าว 3 : จัดซื้อ–จัดจ้าง -->
+            <div
+              class="col-lg-4 col-md-6 news-card-wrap"
+              data-category="procure"
+            >
+              <div class="card h-100 shadow-sm border-0">
+                <img
+                  src="assets/img/about-5.webp"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <span class="badge bg-warning mb-2 text-dark"
+                    >จัดซื้อ–จัดจ้าง</span
+                  >
+                  <h5 class="card-title">ประกาศสอบราคาซื้อวัสดุการแพทย์</h5>
+                  <p class="text-muted small mb-2">ประกาศวันที่ 9 พ.ย. 2568</p>
+                  <p class="card-text text-muted small">
+                    รายละเอียดรายการวัสดุ เงื่อนไขการยื่นข้อเสนอ
+                    และกำหนดวันยื่นซอง…
+                  </p>
+                  <a
+                    href="#"
+                    class="stretched-link small text-primary fw-semibold"
+                    >อ่านเพิ่มเติม</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- เพิ่มการ์ดข่าวอื่น ๆ ได้ โดยใส่ data-category ให้ตรงกับแท็บ -->
           </div>
-          <!-- /news-list -->
+          <!-- ปุ่มดูทั้งหมด -->
+          <div class="text-center mt-4">
+            <a href="news-list.html" class="btn btn-outline-primary btn-sm">
+              ดูข่าวทั้งหมด
+            </a>
+          </div>
         </div>
       </section>
 
@@ -774,6 +604,83 @@
                 <a href="ita-2569.html" class="fw-semibold small text-primary">
                   ดูรายละเอียดปี 2569 →
                 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download section py-5">
+        <div class="container">
+          <div class="text-center mb-4">
+            <h6 class="text-primary fw-bold text-uppercase">เอกสารดาวน์โหลด</h6>
+            <h2 class="fw-bold">แบบฟอร์มและระเบียบสำคัญของโรงพยาบาล</h2>
+            <p class="text-muted">
+              ดาวน์โหลดแบบฟอร์มราชการ เอกสารประกอบงาน
+              และระเบียบที่ใช้ภายในโรงพยาบาล
+            </p>
+          </div>
+
+          <div class="row g-4">
+            <!-- DOC 1 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card shadow-sm border-0 h-100 download-card">
+                <div class="card-body text-center py-4">
+                  <i
+                    class="bi bi-file-earmark-pdf text-danger display-5 mb-3"
+                  ></i>
+                  <h5 class="fw-semibold mb-2">แบบฟอร์มลาป่วย / ลากิจ</h5>
+                  <p class="text-muted small">ไฟล์ PDF</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                    >ดาวน์โหลด</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- DOC 2 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card shadow-sm border-0 h-100 download-card">
+                <div class="card-body text-center py-4">
+                  <i
+                    class="bi bi-file-earmark-pdf text-danger display-5 mb-3"
+                  ></i>
+                  <h5 class="fw-semibold mb-2">แบบฟอร์มเบิกค่ายา</h5>
+                  <p class="text-muted small">ไฟล์ PDF</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                    >ดาวน์โหลด</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- DOC 3 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card shadow-sm border-0 h-100 download-card">
+                <div class="card-body text-center py-4">
+                  <i
+                    class="bi bi-file-earmark-text text-primary display-5 mb-3"
+                  ></i>
+                  <h5 class="fw-semibold mb-2">ระเบียบโรงพยาบาล</h5>
+                  <p class="text-muted small">ไฟล์ DOCX</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                    >ดาวน์โหลด</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- DOC 4 -->
+            <div class="col-lg-3 col-md-6">
+              <div class="card shadow-sm border-0 h-100 download-card">
+                <div class="card-body text-center py-4">
+                  <i class="bi bi-archive text-success display-5 mb-3"></i>
+                  <h5 class="fw-semibold mb-2">แบบฟอร์มราชการอื่น ๆ</h5>
+                  <p class="text-muted small">เอกสารรวม</p>
+                  <a href="#" class="btn btn-outline-primary btn-sm mt-2"
+                    >ดาวน์โหลด</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -1335,14 +1242,22 @@
         </div>
       </div>
 
+      <!-- ⭐ Visitor Counter -->
+      <div class="visitor-counter text-center my-3">
+        <span class="visitor-icon">👁</span>
+        <span class="visitor-text">ผู้เยี่ยมชมทั้งหมด:</span>
+        <span class="visitor-number" id="visitorCount">0</span>
+        <span class="visitor-text">ครั้ง</span>
+      </div>
+
       <!-- COPYRIGHT -->
       <div class="footer-bottom py-3">
         <div class="container text-center small">
           © 2025 โรงพยาบาลสมเด็จ All Rights Reserved.
           <br />
-          <span class="text-secondary small"
-            >พัฒนาโดย งานเทคโนโลยีสารสนเทศ โรงพยาบาลสมเด็จ</span
-          >
+          <span class="text-secondary small">
+            พัฒนาโดย งานเทคโนโลยีสารสนเทศ โรงพยาบาลสมเด็จ
+          </span>
         </div>
       </div>
     </footer>
@@ -1401,6 +1316,33 @@
           768: { slidesPerView: 2 },
           1200: { slidesPerView: 3 },
         },
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const buttons = document.querySelectorAll(".news-filter-btn");
+        const cards = document.querySelectorAll(".news-card-wrap");
+
+        buttons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // เปลี่ยน active ที่ปุ่ม
+            buttons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filter = btn.getAttribute("data-filter");
+
+            cards.forEach((card) => {
+              const category = card.getAttribute("data-category");
+
+              if (filter === "all" || category === filter) {
+                card.classList.remove("d-none");
+              } else {
+                card.classList.add("d-none");
+              }
+            });
+          });
+        });
       });
     </script>
   </body>
