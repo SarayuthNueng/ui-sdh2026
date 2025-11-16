@@ -895,6 +895,29 @@ h6 {
 }
 
 
+/* ita css */
+.list-group-item {
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #e8e8e8;
+}
+
+.list-group-item:hover {
+  background: #f8fbff;
+}
+
+.ita-year-btn {
+  border-radius: 50px !important;
+  padding-inline: 20px;
+}
+
+.ita-year-btn.active {
+  background: var(--bs-primary);
+  color: #fff;
+}
+
+
+
 
 
 

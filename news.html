@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ข่าวสารและประกาศ | โรงพยาบาลสมเด็จ</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- สไตล์เฉพาะหน้า News -->
+    <style>
+      .news-section {
+        padding-top: 130px;
+        padding-bottom: 80px;
+      }
+      @media (min-width: 992px) {
+        .news-section {
+          padding-top: 150px;
+        }
+      }
+
+      .news-tabs .nav-link {
+        border-radius: 999px;
+        padding: 8px 20px;
+        background: #f5f7fb;
+        color: #4b5563;
+        border: 1px solid transparent;
+        font-weight: 500;
+      }
+      .news-tabs .nav-link:hover {
+        background: #e5edff;
+      }
+      .news-tabs .nav-link.active {
+        background: #0d6efd;
+        color: #fff;
+        border-color: #0d6efd;
+        box-shadow: 0 8px 18px rgba(13, 110, 253, 0.25);
+      }
+
+      .news-card {
+        border-radius: 18px;
+        overflow: hidden;
+        transition: all 0.15s ease-in-out;
+      }
+      .news-card img {
+        height: 210px;
+        object-fit: cover;
+      }
+      .news-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.15);
+      }
+
+      .badge-category {
+        font-size: 0.8rem;
+        border-radius: 999px;
+        padding: 4px 10px;
+      }
+
+      .news-meta {
+        font-size: 0.8rem;
+        color: #6b7280;
+      }
+
+      .breadcrumb-nav {
+        font-size: 0.9rem;
+      }
+      .breadcrumb-nav a {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .breadcrumb-nav a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <!-- HEADER -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+        style="padding-left: 15px"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="assets/img/sdh-logo.png" alt="โรงพยาบาลสมเด็จ" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero">หน้าหลัก</a></li>
+            <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
+            <li><a href="index.html#departments">หน่วยงานภายใน</a></li>
+            <li><a href="news.html" class="active">ข่าวสาร</a></li>
+            <li><a href="ita.html">ประกาศ ITA</a></li>
+            <li><a href="index.html#download">ดาวน์โหลด</a></li>
+            <li><a href="index.html#web-services">เว็บ Service</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="btn-getstarted d-inline-flex align-items-center gap-2 lang-switch">
+          <span class="lang active" data-lang="th">ไทย</span>
+          <span>|</span>
+          <span class="lang" data-lang="en">ENG</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="section news-section">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <div class="breadcrumb-nav mb-3">
+            <a href="index.html">หน้าหลัก</a> /
+            <span class="text-secondary">ข่าวสารและประกาศ</span>
+          </div>
+
+          <!-- Heading -->
+          <div class="text-center mb-4">
+            <h2 class="fw-bold mb-2">ข่าวสารและประกาศ</h2>
+            <p class="text-muted mb-0">
+              ติดตามข่าวประชาสัมพันธ์ รับสมัครงาน จัดซื้อ–จัดจ้าง และประกาศสำคัญของโรงพยาบาลสมเด็จ
+            </p>
+          </div>
+
+          <!-- Tabs หมวดข่าว -->
+          <ul
+            class="nav nav-pills justify-content-center gap-2 mb-4 news-tabs"
+            id="newsTabs"
+          >
+            <li class="nav-item">
+              <button class="nav-link active news-tab-btn" data-category="all">
+                ทั้งหมด
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link news-tab-btn" data-category="pr">
+                ประชาสัมพันธ์
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link news-tab-btn" data-category="job">
+                รับสมัครงาน
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link news-tab-btn" data-category="procurement">
+                จัดซื้อ–จัดจ้าง
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link news-tab-btn" data-category="egp">
+                ประกาศ EG-P
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link news-tab-btn" data-category="ethic">
+                ชมรมจริยธรรม
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link news-tab-btn" data-category="finance">
+                งบการเงินประจำปี
+              </button>
+            </li>
+          </ul>
+
+          <!-- Grid รายการข่าว -->
+          <div class="row g-4" id="newsGrid">
+            <!-- การ์ดข่าวตัวอย่าง – หมวดประชาสัมพันธ์ -->
+            <div class="col-lg-4 col-md-6 news-item" data-category="pr">
+              <div class="card shadow-sm border-0 news-card h-100">
+                <img src="assets/img/about-5.webp" class="card-img-top" alt="" />
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-primary badge-category">ประชาสัมพันธ์</span>
+                    <span class="news-meta">
+                      <i class="bi bi-calendar-event me-1"></i>13 พ.ย. 2568
+                    </span>
+                  </div>
+                  <h5 class="card-title mb-2">
+                    แจ้งเปลี่ยนแปลงเวลาบริการคลินิกนอกเวลา
+                  </h5>
+                  <p class="card-text text-muted small flex-grow-1">
+                    ปรับปรุงรอบให้บริการคลินิกนอกเวลา เพื่ออำนวยความสะดวกแก่ผู้รับบริการ…
+                  </p>
+                  <a href="news-detail.html" class="stretched-link small text-primary fw-semibold">
+                    อ่านเพิ่มเติม
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- การ์ดข่าว – หมวดรับสมัครงาน -->
+            <div class="col-lg-4 col-md-6 news-item" data-category="job">
+              <div class="card shadow-sm border-0 news-card h-100">
+                <img src="assets/img/about-5.webp" class="card-img-top" alt="" />
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-success badge-category">รับสมัครงาน</span>
+                    <span class="news-meta">
+                      <i class="bi bi-calendar-event me-1"></i>11 พ.ย. 2568
+                    </span>
+                  </div>
+                  <h5 class="card-title mb-2">
+                    รับสมัครเจ้าพนักงานสาธารณสุข 2 อัตรา
+                  </h5>
+                  <p class="card-text text-muted small flex-grow-1">
+                    คุณสมบัติผู้สมัคร หลักฐานที่ต้องยื่น และกำหนดวันสอบคัดเลือก…
+                  </p>
+                  <a href="news-detail.html" class="stretched-link small text-primary fw-semibold">
+                    อ่านเพิ่มเติม
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- การ์ดข่าว – หมวดจัดซื้อ–จัดจ้าง -->
+            <div class="col-lg-4 col-md-6 news-item" data-category="procurement">
+              <div class="card shadow-sm border-0 news-card h-100">
+                <img src="assets/img/about-5.webp" class="card-img-top" alt="" />
+                <div class="card-body d-flex flex-column">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="badge bg-warning text-dark badge-category">
+                      จัดซื้อ–จัดจ้าง
+                    </span>
+                    <span class="news-meta">
+                      <i class="bi bi-calendar-event me-1"></i>9 พ.ย. 2568
+                    </span>
+                  </div>
+                  <h5 class="card-title mb-2">
+                    ประกาศสอบราคาซื้อวัสดุการแพทย์
+                  </h5>
+                  <p class="card-text text-muted small flex-grow-1">
+                    รายละเอียดรายการวัสดุ เงื่อนไขการยื่นข้อเสนอ และกำหนดวันยื่นซอง…
+                  </p>
+                  <a href="news-detail.html" class="stretched-link small text-primary fw-semibold">
+                    อ่านเพิ่มเติม
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- คุณสามารถก็อปการ์ดด้านบนไปเพิ่มข่าวหมวดอื่น ๆ ได้ตามต้องการ -->
+          </div>
+
+          <!-- Pagination ตัวอย่าง -->
+          <nav class="mt-4" aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <span class="page-link">«</span>
+              </li>
+              <li class="page-item active">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#">»</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (ใช้ชุดเดียวกับหน้า ITA ของคุณ) -->
+    <footer id="footer" class="footer">
+      <div class="container footer-top pb-4">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <img src="assets/img/sdh-logo.png" width="70" class="mb-2" />
+              <h5 class="fw-bold">โรงพยาบาลสมเด็จ</h5>
+              <p class="mb-1">ตำบลสมเด็จ อำเภอสมเด็จ จังหวัดกาฬสินธุ์ 46150</p>
+              <p class="mb-1"><strong>โทร:</strong> 043-xxx-xxx</p>
+              <p class="mb-2"><strong>Email:</strong> info@sdh.go.th</p>
+
+              <div class="social-links mt-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-line"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h6>เมนูหลัก</h6>
+            <ul>
+              <li><a href="index.html#hero">หน้าหลัก</a></li>
+              <li><a href="news.html">ข่าวประชาสัมพันธ์</a></li>
+              <li><a href="ita.html">ประกาศ ITA</a></li>
+              <li><a href="index.html#web-services">บริการออนไลน์</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h6>หน่วยงานภายใน</h6>
+            <ul>
+              <li><a href="#">งานบริหาร</a></li>
+              <li><a href="#">งานการเงิน</a></li>
+              <li><a href="#">งานเวชระเบียน</a></li>
+              <li><a href="#">งานไอที</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h6>ระบบสารสนเทศ</h6>
+            <ul>
+              <li><a href="#">HIS</a></li>
+              <li><a href="#">ระบบบุคลากร</a></li>
+              <li><a href="#">ระบบเอกสาร</a></li>
+              <li><a href="#">ระบบแจ้งซ่อม</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="visitor-counter text-center my-3">
+        <span class="visitor-icon">👁</span>
+        <span class="visitor-text">ผู้เยี่ยมชมทั้งหมด:</span>
+        <span class="visitor-number" id="visitorCount">0</span>
+        <span class="visitor-text">ครั้ง</span>
+      </div>
+
+      <div class="footer-bottom py-3">
+        <div class="container text-center small">
+          © 2025 โรงพยาบาลสมเด็จ All Rights Reserved.
+          <br />
+          <span class="text-secondary small">
+            พัฒนาโดย งานเทคโนโลยีสารสนเทศ โรงพยาบาลสมเด็จ
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- สลับภาษาในปุ่ม ไทย/ENG -->
+    <script>
+      document.querySelectorAll(".lang-switch .lang").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".lang-switch .lang")
+            .forEach((el) => el.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+    </script>
+
+    <!-- ฟิลเตอร์ข่าวตามหมวด -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const tabButtons = document.querySelectorAll(".news-tab-btn");
+        const items = document.querySelectorAll(".news-item");
+
+        tabButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const cat = btn.getAttribute("data-category");
+
+            tabButtons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            items.forEach((item) => {
+              const itemCat = item.getAttribute("data-category");
+              if (cat === "all" || itemCat === cat) {
+                item.classList.remove("d-none");
+              } else {
+                item.classList.add("d-none");
+              }
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

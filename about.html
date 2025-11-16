@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>เกี่ยวกับเรา | โรงพยาบาลสมเด็จ</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      body {
+        font-family: "Sarabun", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      .about-page {
+        padding-top: 130px;
+        padding-bottom: 70px;
+      }
+      @media (min-width: 992px) {
+        .about-page {
+          padding-top: 150px;
+        }
+      }
+
+      .about-hero {
+        background: linear-gradient(
+          135deg,
+          #f3f7ff 0%,
+          #ffffff 40%,
+          #f7fbff 100%
+        );
+        border-radius: 24px;
+        padding: 32px 24px;
+      }
+      @media (min-width: 992px) {
+        .about-hero {
+          padding: 40px 40px;
+        }
+      }
+
+      .about-hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 4px 12px;
+        border-radius: 999px;
+        background: rgba(25, 103, 210, 0.06);
+        color: #1967d2;
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+      }
+
+      .director-card {
+        border-radius: 18px;
+        background: #ffffff;
+        box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06);
+        padding: 18px 18px;
+      }
+      .director-photo {
+        width: 110px;
+        height: 140px;
+        object-fit: cover;
+        border-radius: 14px;
+        border: 3px solid rgba(25, 103, 210, 0.12);
+        background: #f5f5f5;
+      }
+
+      .section-title-sm {
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.85rem;
+        color: #6c757d;
+        font-weight: 600;
+        margin-bottom: 0.25rem;
+      }
+
+      .pill-box {
+        border-radius: 14px;
+        padding: 16px 18px;
+        border: 1px solid rgba(148, 163, 184, 0.35);
+        background: #ffffff;
+      }
+
+      .value-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 4px 10px;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 184, 0.5);
+        font-size: 0.85rem;
+        margin: 4px 4px 0 0;
+        background: #f9fafb;
+      }
+
+      .policy-card {
+        border-radius: 18px;
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        background: #ffffff;
+        padding: 18px 18px;
+        height: 100%;
+      }
+
+      .policy-icon {
+        width: 34px;
+        height: 34px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(25, 103, 210, 0.08);
+        color: #1967d2;
+        margin-right: 6px;
+      }
+
+      .timeline-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 999px;
+        background: #1967d2;
+        box-shadow: 0 0 0 4px rgba(25, 103, 210, 0.15);
+        margin-right: 8px;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <!-- HEADER -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        style="padding-left: 15px"
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <img src="assets/img/sdh-logo.png" alt="" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero">หน้าหลัก</a></li>
+            <li><a href="about.html" class="active">เกี่ยวกับเรา</a></li>
+            <li><a href="index.html#departments">หน่วยงานภายใน</a></li>
+            <li><a href="news.html">ข่าวสาร</a></li>
+            <li><a href="ita.html">ประกาศ ITA</a></li>
+            <li><a href="index.html#download">ดาวน์โหลด</a></li>
+            <li><a href="index.html#web-services">เว็บ Service</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div
+          class="btn-getstarted d-inline-flex align-items-center gap-2 lang-switch"
+        >
+          <span class="lang active" data-lang="th">ไทย</span>
+          <span>|</span>
+          <span class="lang" data-lang="en">ENG</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="about-page">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <div class="text-muted small mb-3">
+            <a href="index.html" class="text-muted">หน้าหลัก</a> /
+            <span class="text-secondary">เกี่ยวกับเรา</span>
+          </div>
+
+          <!-- HERO ABOUT -->
+          <div class="about-hero mb-5">
+            <div class="row g-4 align-items-center">
+              <div class="col-lg-7">
+                <div class="about-hero-badge">
+                  <i class="bi bi-hospital"></i>
+                  ข้อมูลโรงพยาบาลสมเด็จ
+                </div>
+                <h1 class="h3 h-lg-2 fw-bold mb-3">
+                  โรงพยาบาลชุมชนแม่ข่ายที่มีคุณภาพ<br />
+                  บุคลากรมีความสุข ชุมชนเข้มแข็งด้านสุขภาพ
+                </h1>
+                <p class="text-muted mb-0">
+                  โรงพยาบาลสมเด็จให้บริการด้านสุขภาพแบบองค์รวมแก่ประชาชนในอำเภอสมเด็จ
+                  และพื้นที่ใกล้เคียง บูรณาการการดูแลรักษา ส่งเสริม ป้องกัน
+                  และฟื้นฟูสุขภาพ ร่วมกับเครือข่ายภาคีทุกภาคส่วน
+                </p>
+              </div>
+
+              <div class="col-lg-5">
+                <div class="director-card">
+                  <div class="d-flex align-items-center gap-3 mb-2">
+                    <img
+                      src="assets/img/director.png"
+                      alt="ผู้อำนวยการโรงพยาบาลสมเด็จ"
+                      class="director-photo"
+                    />
+                    <div>
+                      <div class="small text-muted mb-1">
+                        ผู้อำนวยการโรงพยาบาล
+                      </div>
+                      <h5 class="fw-bold mb-1">นพ.ตัวอย่าง สมเด็จสุขภาพดี</h5>
+                      <div class="small text-muted">
+                        ผู้นำทีมสุขภาพ
+                        ร่วมขับเคลื่อนโรงพยาบาลชุมชนแม่ข่ายสู่มาตรฐานคุณภาพ
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="my-2" />
+                  <div class="small text-muted">
+                    <i class="bi bi-quote text-primary me-1"></i>
+                    “มุ่งพัฒนาระบบบริการที่มีคุณภาพ ปลอดภัย
+                    และเข้าถึงได้สำหรับทุกคนในชุมชน”
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- VISION / MISSION / VALUES -->
+          <div class="row g-4 mb-5">
+            <!-- วิสัยทัศน์ -->
+            <div class="col-lg-6">
+              <div class="pill-box h-100">
+                <div class="section-title-sm">Vision</div>
+                <h5 class="fw-bold mb-2">วิสัยทัศน์</h5>
+                <p class="mb-0">
+                  โรงพยาบาลชุมชนแม่ข่ายที่มีคุณภาพ บุคลากรมีความสุข
+                  ชุมชนเข้มแข็งด้านสุขภาพ
+                </p>
+              </div>
+            </div>
+
+            <!-- พันธกิจ -->
+            <div class="col-lg-6">
+              <div class="pill-box h-100">
+                <div class="section-title-sm">Mission</div>
+                <h5 class="fw-bold mb-2">พันธกิจ</h5>
+                <ul class="mb-0">
+                  <li>
+                    พัฒนาคุณภาพการบริหารจัดการโรงพยาบาลและเครือข่ายบริการสุขภาพ
+                  </li>
+                  <li>พัฒนาระบบการดูแลสุขภาพแบบองค์รวมและการแพทย์เฉพาะทาง</li>
+                  <li>
+                    พัฒนาศักยภาพและความสามารถของบุคลากรให้มีคุณภาพ
+                    มีความสมดุลระหว่างชีวิตและการทำงาน
+                  </li>
+                  <li>
+                    เสริมสร้างพลังอำนาจภาคีเครือข่ายในการจัดการปัญหาสุขภาพที่สำคัญในพื้นที่
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ค่านิยม / อัตลักษณ์ -->
+          <div class="row g-4 mb-5">
+            <div class="col-lg-6">
+              <div class="pill-box h-100">
+                <div class="section-title-sm">Core Values</div>
+                <h5 class="fw-bold mb-2">ค่านิยมองค์กร</h5>
+                <p class="mb-2">
+                  รับผิดชอบสังคม นิยมเรียนรู้ เชิดชูคุณธรรม นำจิตบริการ
+                  ทำงานเป็นทีม
+                </p>
+                <div class="mt-1">
+                  <span class="value-pill">
+                    <i class="bi bi-people-fill"></i> รับผิดชอบสังคม
+                  </span>
+                  <span class="value-pill">
+                    <i class="bi bi-book-half"></i> นิยมเรียนรู้
+                  </span>
+                  <span class="value-pill">
+                    <i class="bi bi-award-fill"></i> เชิดชูคุณธรรม
+                  </span>
+                  <span class="value-pill">
+                    <i class="bi bi-heart-pulse-fill"></i> นำจิตบริการ
+                  </span>
+                  <span class="value-pill">
+                    <i class="bi bi-diagram-3-fill"></i> ทำงานเป็นทีม
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="pill-box h-100">
+                <div class="section-title-sm">Identity</div>
+                <h5 class="fw-bold mb-2">อัตลักษณ์องค์กร</h5>
+                <p class="mb-0">สามัคคี พอเพียง เสียสละ</p>
+                <ul class="mb-0 mt-2">
+                  <li>สามัคคี ร่วมแรงร่วมใจของทีมสหสาขาวิชาชีพ</li>
+                  <li>
+                    พอเพียง ใช้ทรัพยากรอย่างคุ้มค่าและเหมาะสมกับบริบทพื้นที่
+                  </li>
+                  <li>เสียสละ มุ่งประโยชน์ผู้ป่วยและชุมชนเป็นสำคัญ</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- นโยบายภาพรวม + IT Policy -->
+          <div class="row g-4 mb-5">
+            <div class="col-lg-7">
+              <div class="policy-card">
+                <div class="mb-2">
+                  <span class="policy-icon">
+                    <i class="bi bi-file-earmark-text-fill"></i>
+                  </span>
+                  <span class="fw-semibold"
+                    >นโยบายการบริหารจัดการโรงพยาบาล</span
+                  >
+                </div>
+                <p class="text-muted small mb-2">
+                  มุ่งเน้นการบริหารจัดการที่โปร่งใส ตรวจสอบได้
+                  และยึดผู้รับบริการเป็นศูนย์กลาง
+                  โดยคำนึงถึงคุณภาพและความปลอดภัยของผู้ป่วย
+                  ควบคู่กับสวัสดิการและคุณภาพชีวิตที่ดีของบุคลากร
+                </p>
+                <ul class="small mb-0">
+                  <li>ยึดหลักธรรมาภิบาล โปร่งใส และตรวจสอบได้</li>
+                  <li>สนับสนุนการพัฒนาคุณภาพตามมาตรฐานวิชาชีพและ HA</li>
+                  <li>ส่งเสริมการมีส่วนร่วมของชุมชนและภาคีเครือข่าย</li>
+                  <li>พัฒนาระบบข้อมูลและสารสนเทศเพื่อการตัดสินใจที่แม่นยำ</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="policy-card">
+                <div class="mb-2">
+                  <span class="policy-icon">
+                    <i class="bi bi-shield-lock-fill"></i>
+                  </span>
+                  <span class="fw-semibold">นโยบายเทคโนโลยีสารสนเทศ</span>
+                </div>
+                <ul class="small mb-0">
+                  <li>
+                    พัฒนาระบบสารสนเทศโรงพยาบาลให้มีความปลอดภัยและเชื่อถือได้
+                  </li>
+                  <li>
+                    คุ้มครองข้อมูลสุขภาพส่วนบุคคลตามกฎหมายและมาตรฐานที่เกี่ยวข้อง
+                  </li>
+                  <li>
+                    ส่งเสริมการใช้ระบบดิจิทัลเพื่อลดงานเอกสารและเพิ่มประสิทธิภาพ
+                  </li>
+                  <li>
+                    จัดให้มีการสำรองข้อมูลและแผนความต่อเนื่องทางธุรกิจ (BCP)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ประวัติ / ไทม์ไลน์สั้น ๆ (ตัวอย่าง) -->
+          <div class="mb-2">
+            <div class="section-title-sm">History</div>
+            <h5 class="fw-bold mb-3">พัฒนาการของโรงพยาบาลสมเด็จ (สรุป)</h5>
+          </div>
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="pill-box h-100">
+                <div class="d-flex align-items-center mb-1">
+                  <span class="timeline-dot"></span>
+                  <span class="fw-semibold small">เริ่มก่อตั้ง</span>
+                </div>
+                <p class="small text-muted mb-0">
+                  เริ่มให้บริการด้านสาธารณสุขขั้นพื้นฐานแก่ประชาชนในอำเภอสมเด็จ
+                  และพื้นที่ใกล้เคียง
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="pill-box h-100">
+                <div class="d-flex align-items-center mb-1">
+                  <span class="timeline-dot"></span>
+                  <span class="fw-semibold small"
+                    >พัฒนาเป็นโรงพยาบาลชุมชนแม่ข่าย</span
+                  >
+                </div>
+                <p class="small text-muted mb-0">
+                  เพิ่มขีดความสามารถการให้บริการเฉพาะทาง
+                  และขยายเครือข่ายบริการปฐมภูมิในตำบลต่าง ๆ
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="pill-box h-100">
+                <div class="d-flex align-items-center mb-1">
+                  <span class="timeline-dot"></span>
+                  <span class="fw-semibold small">ก้าวสู่ยุคดิจิทัล</span>
+                </div>
+                <p class="small text-muted mb-0">
+                  นำระบบสารสนเทศ โรงพยาบาลอัจฉริยะ และนโยบายไซเบอร์ซีเคียวริตี้
+                  มาใช้สนับสนุนการบริหารจัดการและบริการผู้ป่วย
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER ย่อ (ใช้ชุดเดียวกับหน้าหลักได้) -->
+    <footer id="footer" class="footer">
+      <div class="container footer-top pb-4">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <img src="assets/img/sdh-logo.png" width="70" class="mb-2" />
+              <h5 class="fw-bold">โรงพยาบาลสมเด็จ</h5>
+              <p class="mb-1">ตำบลสมเด็จ อำเภอสมเด็จ จังหวัดกาฬสินธุ์ 46150</p>
+              <p class="mb-1"><strong>โทร:</strong> 043-xxx-xxx</p>
+              <p class="mb-2"><strong>Email:</strong> info@sdh.go.th</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h6>เมนูหลัก</h6>
+            <ul>
+              <li><a href="index.html#hero">หน้าหลัก</a></li>
+              <li><a href="news.html">ข่าวประชาสัมพันธ์</a></li>
+              <li><a href="ita.html">ประกาศ ITA</a></li>
+              <li><a href="index.html#web-services">บริการออนไลน์</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom py-3 text-center small">
+        © 2025 โรงพยาบาลสมเด็จ All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      // toggle ภาษา (เหมือนหน้าอื่น)
+      document.querySelectorAll(".lang-switch .lang").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".lang-switch .lang")
+            .forEach((el) => el.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

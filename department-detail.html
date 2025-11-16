@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>งานเวชระเบียน | โรงพยาบาลสมเด็จ</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <style>
+      .dept-section {
+        padding-top: 130px;
+        padding-bottom: 60px;
+      }
+      @media (min-width: 992px) {
+        .dept-section {
+          padding-top: 150px;
+        }
+      }
+
+      .dept-hero-img {
+        width: 100%;
+        border-radius: 18px;
+        max-height: 350px;
+        object-fit: cover;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .staff-photo {
+        border-radius: 12px;
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+        style="padding-left: 15px"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="assets/img/sdh-logo.png" alt="โรงพยาบาลสมเด็จ" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero">หน้าหลัก</a></li>
+            <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
+            <li><a href="index.html#departments">หน่วยงานภายใน</a></li>
+            <li><a href="news.html" class="active">ข่าวสาร</a></li>
+            <li><a href="ita.html">ประกาศ ITA</a></li>
+            <li><a href="index.html#download">ดาวน์โหลด</a></li>
+            <li><a href="index.html#web-services">เว็บ Service</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="btn-getstarted d-inline-flex align-items-center gap-2 lang-switch">
+          <span class="lang active" data-lang="th">ไทย</span>
+          <span>|</span>
+          <span class="lang" data-lang="en">ENG</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="dept-section">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <div class="text-muted small mb-3">
+            <a href="index.html" class="text-muted">หน้าหลัก</a> /
+            <a href="index.html#departments" class="text-muted">หน่วยงานภายใน</a> /
+            <span class="text-secondary">งานเวชระเบียน</span>
+          </div>
+
+          <div class="row g-5">
+            <!-- เนื้อหาหลัก -->
+            <div class="col-lg-8">
+              <h2 class="fw-bold mb-3">งานเวชระเบียน</h2>
+              <p class="text-muted mb-4">
+                ข้อมูลทั่วไป หน้าที่และความรับผิดชอบของหน่วยงานเวชระเบียน โรงพยาบาลสมเด็จ
+              </p>
+
+              <!-- ภาพ Hero -->
+              <img
+                src="assets/img/about-2.webp"
+                class="dept-hero-img mb-4"
+                alt="ภาพหน่วยงาน"
+              />
+
+              <!-- รายละเอียด -->
+              <h5 class="fw-semibold mt-4">ภารกิจหลัก</h5>
+              <ul>
+                <li>บริหารจัดการเวชระเบียนผู้ป่วยนอก–ผู้ป่วยใน</li>
+                <li>ควบคุมคุณภาพข้อมูลบริการทางการแพทย์</li>
+                <li>ลงทะเบียน ตรวจสอบสิทธิ์ และจัดทำบัตรผู้ป่วย</li>
+                <li>บริการสำเนาข้อมูลเวชระเบียนตามระเบียบ</li>
+              </ul>
+
+              <h5 class="fw-semibold mt-4">ชั่วโมงทำการ</h5>
+              <p>
+                • จันทร์–ศุกร์ : 08.30 – 16.30 น.<br />
+                • คลินิกนอกเวลา : 16.30 – 20.00 น.<br />
+                • วันหยุดราชการ : งดให้บริการ
+              </p>
+
+              <h5 class="fw-semibold mt-4 mb-3">บุคลากรประจำหน่วยงาน</h5>
+
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/img/team-1.jpg" class="staff-photo" />
+                <div>
+                  <div class="fw-bold">นางสาวตัวอย่าง เจ้าหน้าที่</div>
+                  <div class="text-muted small">เจ้าพนักงานเวชสถิติ</div>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="assets/img/team-2.jpg" class="staff-photo" />
+                <div>
+                  <div class="fw-bold">นายสมชาย ตัวอย่าง</div>
+                  <div class="text-muted small">จนท.งานเวชระเบียน</div>
+                </div>
+              </div>
+
+              <h5 class="fw-semibold mt-4">เอกสารดาวน์โหลด</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="bi bi-file-earmark-pdf me-1 text-danger"></i>
+                  <a href="#" class="text-primary">แบบฟอร์มคำร้องขอสำเนาเวชระเบียน</a>
+                </li>
+                <li>
+                  <i class="bi bi-file-earmark-word me-1 text-primary"></i>
+                  <a href="#" class="text-primary">คู่มือประชาชน – งานเวชระเบียน</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+              <div class="card shadow-sm border-0 p-3 mb-4">
+                <h6 class="fw-semibold mb-2">
+                  <i class="bi bi-list-ul me-1"></i>หน่วยงานอื่น ๆ
+                </h6>
+                <ul class="list-unstyled small">
+                  <li><a href="department-detail.html">งานบริหาร</a></li>
+                  <li><a href="department-detail.html">งานการเงิน</a></li>
+                  <li><a href="department-detail.html" class="fw-bold text-primary">งานเวชระเบียน</a></li>
+                  <li><a href="department-detail.html">งานห้องยา</a></li>
+                  <li><a href="department-detail.html">งานไอที</a></li>
+                  <li><a href="department-detail.html">งานห้องปฏิบัติการ</a></li>
+                </ul>
+              </div>
+
+              <div class="card shadow-sm border-0 p-3">
+                <h6 class="fw-semibold mb-2">
+                  <i class="bi bi-telephone me-1"></i>ช่องทางติดต่อ
+                </h6>
+                <p class="small mb-1">โทร : 043-xxx-xxx</p>
+                <p class="small mb-1">อีเมล : record@sdh.go.th</p>
+                <p class="small text-muted">อาคารผู้ป่วยนอก ชั้น 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer">
+      <div class="container footer-top pb-4">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <img src="assets/img/sdh-logo.png" width="70" class="mb-2" />
+              <h5 class="fw-bold">โรงพยาบาลสมเด็จ</h5>
+              <p class="mb-1">ตำบลสมเด็จ อำเภอสมเด็จ จังหวัดกาฬสินธุ์ 46150</p>
+              <p class="mb-1"><strong>โทร:</strong> 043-xxx-xxx</p>
+              <p class="mb-2"><strong>Email:</strong> info@sdh.go.th</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h6>เมนูหลัก</h6>
+            <ul>
+              <li><a href="index.html#hero">หน้าหลัก</a></li>
+              <li><a href="news.html">ข่าวประชาสัมพันธ์</a></li>
+              <li><a href="ita.html">ประกาศ ITA</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom py-3 text-center small">
+        © 2025 โรงพยาบาลสมเด็จ All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>รายละเอียดข่าวสาร | โรงพยาบาลสมเด็จ</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- สไตล์เฉพาะหน้า detail -->
+    <style>
+      .news-detail-section {
+        padding-top: 130px;
+        padding-bottom: 80px;
+      }
+      @media (min-width: 992px) {
+        .news-detail-section {
+          padding-top: 150px;
+        }
+      }
+
+      .breadcrumb-nav {
+        font-size: 0.9rem;
+      }
+      .breadcrumb-nav a {
+        color: #6b7280;
+        text-decoration: none;
+      }
+      .breadcrumb-nav a:hover {
+        text-decoration: underline;
+      }
+
+      .article-hero-img {
+        border-radius: 18px;
+        max-height: 420px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .article-meta {
+        font-size: 0.9rem;
+        color: #6b7280;
+      }
+
+      .attachment-list li i {
+        color: #0d6efd;
+      }
+
+      .sidebar-card {
+        border-radius: 16px;
+      }
+      .sidebar-card .list-group-item {
+        border: 0;
+        border-bottom: 1px solid #f1f5f9;
+        padding-left: 0;
+        padding-right: 0;
+      }
+      .sidebar-card .list-group-item:last-child {
+        border-bottom: 0;
+      }
+
+      .tag-badge {
+        border-radius: 999px;
+        font-size: 0.8rem;
+        padding: 4px 10px;
+        margin-right: 4px;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <!-- HEADER -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+        style="padding-left: 15px"
+      >
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+          <img src="assets/img/sdh-logo.png" alt="โรงพยาบาลสมเด็จ" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html#hero">หน้าหลัก</a></li>
+            <li><a href="index.html#about">เกี่ยวกับเรา</a></li>
+            <li><a href="index.html#departments">หน่วยงานภายใน</a></li>
+            <li><a href="news.html" class="active">ข่าวสาร</a></li>
+            <li><a href="ita.html">ประกาศ ITA</a></li>
+            <li><a href="index.html#download">ดาวน์โหลด</a></li>
+            <li><a href="index.html#web-services">เว็บ Service</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <div class="btn-getstarted d-inline-flex align-items-center gap-2 lang-switch">
+          <span class="lang active" data-lang="th">ไทย</span>
+          <span>|</span>
+          <span class="lang" data-lang="en">ENG</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main">
+      <section class="section news-detail-section">
+        <div class="container">
+          <!-- Breadcrumb -->
+          <div class="breadcrumb-nav mb-3">
+            <a href="index.html">หน้าหลัก</a> /
+            <a href="news.html">ข่าวสารและประกาศ</a> /
+            <span class="text-secondary">รายละเอียดข่าว</span>
+          </div>
+
+          <div class="row g-5">
+            <!-- เนื้อหาหลัก -->
+            <div class="col-lg-8">
+              <!-- หมวด + วันที่ -->
+              <div class="d-flex flex-wrap align-items-center gap-2 mb-2">
+                <span class="badge bg-primary rounded-pill">ประชาสัมพันธ์</span>
+                <span class="article-meta">
+                  <i class="bi bi-calendar-event me-1"></i>ประกาศวันที่ 13 พฤศจิกายน 2568
+                </span>
+                <span class="article-meta ms-auto">
+                  <i class="bi bi-eye me-1"></i>อ่านแล้ว 1,234 ครั้ง
+                </span>
+              </div>
+
+              <!-- หัวข้อข่าว -->
+              <h1 class="h3 fw-bold mb-3">
+                แจ้งเปลี่ยนแปลงเวลาบริการคลินิกนอกเวลา โรงพยาบาลสมเด็จ
+              </h1>
+
+              <!-- ปุ่มกลับ -->
+              <div class="mb-3">
+                <a href="news.html" class="btn btn-sm btn-outline-secondary">
+                  <i class="bi bi-arrow-left me-1"></i> กลับไปหน้าข่าวทั้งหมด
+                </a>
+              </div>
+
+              <!-- รูปภาพ Hero -->
+              <figure class="mb-4">
+                <img
+                  src="assets/img/about-5.webp"
+                  alt="ภาพประกอบข่าว"
+                  class="article-hero-img shadow-sm"
+                />
+                <figcaption class="small text-muted mt-2">
+                  ภาพประกอบ: บรรยากาศคลินิกนอกเวลาของโรงพยาบาลสมเด็จ
+                </figcaption>
+              </figure>
+
+              <!-- เนื้อหาข่าว -->
+              <article class="article-content">
+                <p>
+                  โรงพยาบาลสมเด็จขอแจ้งเปลี่ยนแปลงเวลาบริการคลินิกนอกเวลา
+                  เพื่อให้สอดคล้องกับความต้องการของประชาชน
+                  และเพิ่มประสิทธิภาพในการให้บริการตรวจรักษา
+                  โดยมีรายละเอียดดังต่อไปนี้
+                </p>
+
+                <h5 class="fw-semibold mt-4 mb-2">1. ระยะเวลาการให้บริการใหม่</h5>
+                <ul>
+                  <li>วันจันทร์ – ศุกร์ เวลา 16.30 – 20.00 น.</li>
+                  <li>วันเสาร์ เวลา 08.30 – 12.00 น.</li>
+                  <li>งดให้บริการในวันอาทิตย์และวันหยุดนักขัตฤกษ์</li>
+                </ul>
+
+                <h5 class="fw-semibold mt-4 mb-2">2. ประเภทคลินิกที่เปิดให้บริการ</h5>
+                <p>
+                  เปิดให้บริการคลินิกโรคทั่วไป คลินิกเบาหวาน–ความดัน
+                  และคลินิกกายภาพบำบัดสำหรับผู้ป่วยนอก
+                  ทั้งนี้ผู้รับบริการสามารถนัดหมายล่วงหน้าได้ผ่านระบบออนไลน์ของโรงพยาบาล
+                </p>
+
+                <h5 class="fw-semibold mt-4 mb-2">3. ข้อแนะนำสำหรับผู้รับบริการ</h5>
+                <ol>
+                  <li>กรุณานำบัตรประชาชนและบัตรนัด (หากมี) มาแสดงทุกครั้ง</li>
+                  <li>
+                    แนะนำให้มาถึงก่อนเวลาอย่างน้อย 30 นาที
+                    เพื่อดำเนินการลงทะเบียนและเตรียมเอกสาร
+                  </li>
+                  <li>
+                    ผู้ที่มีอาการฉุกเฉินสามารถติดต่อห้องฉุกเฉินได้ตลอด 24 ชั่วโมง
+                  </li>
+                </ol>
+
+                <p class="mt-4">
+                  โรงพยาบาลสมเด็จขออภัยในความไม่สะดวกมา ณ ที่นี้
+                  และขอขอบคุณประชาชนทุกท่านที่ให้ความร่วมมือ
+                  หากต้องการสอบถามข้อมูลเพิ่มเติม
+                  กรุณาติดต่อหมายเลขโทรศัพท์ <strong>043-xxx-xxx</strong>
+                  ในวันและเวลาราชการ
+                </p>
+              </article>
+
+              <!-- เอกสารแนบ -->
+              <div class="mt-4">
+                <h5 class="fw-semibold mb-2">
+                  <i class="bi bi-paperclip me-1"></i>เอกสารแนบ
+                </h5>
+                <ul class="list-unstyled attachment-list">
+                  <li class="mb-1">
+                    <i class="bi bi-file-earmark-pdf me-2"></i>
+                    <a href="#" class="text-primary">
+                      ประกาศเปลี่ยนแปลงเวลาคลินิกนอกเวลา (ไฟล์ PDF)
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <i class="bi bi-file-earmark-excel me-2"></i>
+                    <a href="#" class="text-primary">
+                      ตารางเวรแพทย์คลินิกนอกเวลา (ไฟล์ Excel)
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- แท็ก -->
+              <div class="mt-4">
+                <span class="fw-semibold me-2">แท็ก:</span>
+                <span class="badge bg-light text-dark border tag-badge">คลินิกนอกเวลา</span>
+                <span class="badge bg-light text-dark border tag-badge">ประชาสัมพันธ์</span>
+                <span class="badge bg-light text-dark border tag-badge">การให้บริการ</span>
+              </div>
+
+              <!-- ปุ่มก่อนหน้า/ถัดไป -->
+              <div
+                class="d-flex flex-wrap justify-content-between align-items-center border-top pt-4 mt-4"
+              >
+                <a href="#" class="text-primary small">
+                  <i class="bi bi-arrow-left me-1"></i> ข่าวก่อนหน้า:
+                  แจ้งหยุดให้บริการชั่วคราวห้องตรวจ X-ray
+                </a>
+                <a href="#" class="text-primary small text-end">
+                  ข่าวถัดไป: เปิดให้บริการตรวจสุขภาพประจำปี
+                  <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+              <!-- ข่าวล่าสุด -->
+              <div class="card shadow-sm border-0 sidebar-card mb-4 p-3">
+                <h6 class="fw-semibold mb-2">
+                  <i class="bi bi-clock-history me-1"></i>ข่าวล่าสุด
+                </h6>
+                <div class="list-group list-group-flush">
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action small"
+                  >
+                    เปิดให้บริการคลินิกวัคซีนไข้หวัดใหญ่ สำหรับกลุ่มเสี่ยง
+                    <div class="news-meta">
+                      <i class="bi bi-calendar-event me-1"></i>15 พ.ย. 2568
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action small"
+                  >
+                    รับสมัครพยาบาลวิชาชีพประจำหอผู้ป่วยใน
+                    <div class="news-meta">
+                      <i class="bi bi-calendar-event me-1"></i>14 พ.ย. 2568
+                    </div>
+                  </a>
+                  <a
+                    href="#"
+                    class="list-group-item list-group-item-action small"
+                  >
+                    ประกาศสอบราคาจัดซื้อครุภัณฑ์การแพทย์
+                    <div class="news-meta">
+                      <i class="bi bi-calendar-event me-1"></i>12 พ.ย. 2568
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <!-- หมวดหมู่ -->
+              <div class="card shadow-sm border-0 sidebar-card p-3">
+                <h6 class="fw-semibold mb-2">
+                  <i class="bi bi-list-ul me-1"></i>หมวดข่าว
+                </h6>
+                <ul class="list-unstyled small mb-0">
+                  <li class="mb-1">
+                    <a href="news.html" class="text-decoration-none">
+                      • ข่าวประชาสัมพันธ์
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="news.html" class="text-decoration-none">
+                      • รับสมัครงาน
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="news.html" class="text-decoration-none">
+                      • จัดซื้อ–จัดจ้าง
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="news.html" class="text-decoration-none">
+                      • ประกาศ EG-P
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a href="news.html" class="text-decoration-none">
+                      • ชมรมจริยธรรม
+                    </a>
+                  </li>
+                  <li>
+                    <a href="news.html" class="text-decoration-none">
+                      • งบการเงินประจำปี
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER (เหมือนหน้าอื่น) -->
+    <footer id="footer" class="footer">
+      <div class="container footer-top pb-4">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-about">
+              <img src="assets/img/sdh-logo.png" width="70" class="mb-2" />
+              <h5 class="fw-bold">โรงพยาบาลสมเด็จ</h5>
+              <p class="mb-1">ตำบลสมเด็จ อำเภอสมเด็จ จังหวัดกาฬสินธุ์ 46150</p>
+              <p class="mb-1"><strong>โทร:</strong> 043-xxx-xxx</p>
+              <p class="mb-2"><strong>Email:</strong> info@sdh.go.th</p>
+
+              <div class="social-links mt-3">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-line"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h6>เมนูหลัก</h6>
+            <ul>
+              <li><a href="index.html#hero">หน้าหลัก</a></li>
+              <li><a href="news.html">ข่าวประชาสัมพันธ์</a></li>
+              <li><a href="ita.html">ประกาศ ITA</a></li>
+              <li><a href="index.html#web-services">บริการออนไลน์</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h6>หน่วยงานภายใน</h6>
+            <ul>
+              <li><a href="#">งานบริหาร</a></li>
+              <li><a href="#">งานการเงิน</a></li>
+              <li><a href="#">งานเวชระเบียน</a></li>
+              <li><a href="#">งานไอที</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h6>ระบบสารสนเทศ</h6>
+            <ul>
+              <li><a href="#">HIS</a></li>
+              <li><a href="#">ระบบบุคลากร</a></li>
+              <li><a href="#">ระบบเอกสาร</a></li>
+              <li><a href="#">ระบบแจ้งซ่อม</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="visitor-counter text-center my-3">
+        <span class="visitor-icon">👁</span>
+        <span class="visitor-text">ผู้เยี่ยมชมทั้งหมด:</span>
+        <span class="visitor-number" id="visitorCount">0</span>
+        <span class="visitor-text">ครั้ง</span>
+      </div>
+
+      <div class="footer-bottom py-3">
+        <div class="container text-center small">
+          © 2025 โรงพยาบาลสมเด็จ All Rights Reserved.
+          <br />
+          <span class="text-secondary small">
+            พัฒนาโดย งานเทคโนโลยีสารสนเทศ โรงพยาบาลสมเด็จ
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- ปุ่มสลับภาษา -->
+    <script>
+      document.querySelectorAll(".lang-switch .lang").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".lang-switch .lang")
+            .forEach((el) => el.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
